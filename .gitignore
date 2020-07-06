@@ -122,3 +122,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/evoStream/v2/
+/evoStream/Connectors/

@@ -1,0 +1,108 @@
+\hypertarget{v1_2Tests_2plot__cluster__comparison2_8py}{}\section{evo\+Stream/v1/\+Tests/plot\+\_\+cluster\+\_\+comparison2.py File Reference}
+\label{v1_2Tests_2plot__cluster__comparison2_8py}\index{evo\+Stream/v1/\+Tests/plot\+\_\+cluster\+\_\+comparison2.\+py@{evo\+Stream/v1/\+Tests/plot\+\_\+cluster\+\_\+comparison2.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a2cba197584fc69e23c5e569dd679fb94}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+n\+\_\+samples} = 1500
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_af84d15c284eacd68449f46c192929401}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+noisy\+\_\+circles}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_acc05c8bb19c95ea61aebcad23bb336aa}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+noisy\+\_\+moons} = datasets.\+make\+\_\+moons(n\+\_\+samples=n\+\_\+samples, noise=.\+05)
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a4fcae5cd2d884666fe73d8130c50af1c}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+blobs} = datasets.\+make\+\_\+blobs(n\+\_\+samples=n\+\_\+samples, random\+\_\+state=8)
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a7aa1ac335f87d6e1f36094b65bca11a1}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+no\+\_\+structure} = np.\+random.\+rand(n\+\_\+samples, 2), None
+\item 
+int \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_aaefd4675f46b5ca1753ccf73b1a414be}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+random\+\_\+state} = 170
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a42d5c34407175950c07cb7d0b2156182}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+X} = Standard\+Scaler().fit\+\_\+transform(X)
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a7324ce5de8ee705410e4f7a62b3345d1}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+y}
+\item 
+list \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a7d848bd8a7855de0ace3f44f2930de4f}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+transformation} = \mbox{[}\mbox{[}0.\+6, -\/0.\+6\mbox{]}, \mbox{[}-\/0.\+4, 0.\+8\mbox{]}\mbox{]}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a1d8d28f12e844af721e7e1139fe3c159}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+X\+\_\+aniso} = np.\+dot(X, transformation)
+\item 
+tuple \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a9f7a221c254bb192af11c87e6c5116da}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+aniso} = (X\+\_\+aniso, y)
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_af03141914df75b342fdc529798ea5124}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+varied}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_aa1d61b88bd70f98106d76cb67538d6eb}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+figsize}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a9fd2e84963012df4edbb7cdc91731606}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+left}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_afc98b01fdbbf11a1c46816a968114e34}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+right}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_ae86e440a3a124cfbd3bb793e1ab6ff3b}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+bottom}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_adb0596de422193a05a8cd76220f4b421}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+top}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a4d3f68526ae0aca4d78820f68afd18d9}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+wspace}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_ae7b279407a28540d18da2af5f1142557}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+hspace}
+\item 
+int \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a9f649c30a2bbb78e8464d750eec2ae9f}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+plot\+\_\+num} = 1
+\item 
+dictionary \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_aaf17a1f40efa678a5a6e402c49faabff}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+default\+\_\+base}
+\item 
+list \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a90aa32a684790308f42a927fea4d2e94}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+datasets}
+\item 
+dictionary \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a1449d875d082f7c913611e6412520189}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+params} = default\+\_\+base.\+copy()
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_adb18e1821a9794c4665c91e3dc7c3d1f}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+bandwidth} = cluster.\+estimate\+\_\+bandwidth(X, quantile=params\mbox{[}\textquotesingle{}quantile\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a7076f81562105676ec44f1be11156ce0}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+connectivity}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_aa9d8ef3552ccc66b8e08f9a6e430b663}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+ms} = cluster.\+Mean\+Shift(bandwidth=bandwidth, bin\+\_\+seeding=True)
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_aa2bb78c2d2af1db2249aa24d2ae1129a}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+two\+\_\+means} = cluster.\+Mini\+Batch\+K\+Means(n\+\_\+clusters=params\mbox{[}\textquotesingle{}n\+\_\+clusters\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_aaf8a7e37d59e9fadd9316e501f21fb52}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+ward}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a4061b25c7214a9f0784a943dbd4f4aa9}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+spectral}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a5c87476c1a74958b836b769bd6cfb58e}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+dbscan} = cluster.\+D\+B\+S\+C\+AN(eps=params\mbox{[}\textquotesingle{}eps\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a91bfdb55405dbaa40307584a1c00f2ad}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+evo\+Stream}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_ad754aef230ed0200da57e69dda250948}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+affinity\+\_\+propagation}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a8caf4026b223dfdcd1fa786f235c80e9}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+average\+\_\+linkage}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a34ed9b927ae9917ef31f03606d71e1b8}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+birch} = cluster.\+Birch(n\+\_\+clusters=params\mbox{[}\textquotesingle{}n\+\_\+clusters\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a6000de2a41cdb0d7832045df82f70405}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+gmm}
+\item 
+tuple \hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_ab53f584f9e4719338b483c49a83db64a}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+clustering\+\_\+algorithms}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_ac0dd76c5ba016809d5a00a239a231dc4}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+t0} = time.\+time()
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_ae7d4af8c5bedcefff2785458eff86e66}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+message}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a5ada10fda3ccf53faa672704f11e469b}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+category}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_ad9e12b3b114065ccc2d6aadd4938bf27}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+t1} = time.\+time()
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a30abebca0c85ecd6f642a4cb9d3c5b06}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+y\+\_\+pred} = algorithm.\+labels\+\_\+.\+astype(np.\+int)
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a0acf36096f0c66e5018ab3905ef79c79}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+name}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a2b6c122857964f1f82c1e9a0bfa04c23}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+size}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_af00dd941be19e9e8e08fc1013b8a8a9d}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+colors}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_ad1c582e1821382430409d28491f70153}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+s}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a42cc4316842f99a0ea1885541c312ea4}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+color}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_a05ad402ba53a2057fda919220f45aac2}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+transform}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_aa2d0ac96d1f1a550150746482afc6906}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+trans\+Axes}
+\item 
+\hyperlink{namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2_ab0a179491932f87267669fdeadd48a1e}{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Tests.\+plot\+\_\+cluster\+\_\+comparison2.\+horizontalalignment}
+\end{DoxyCompactItemize}

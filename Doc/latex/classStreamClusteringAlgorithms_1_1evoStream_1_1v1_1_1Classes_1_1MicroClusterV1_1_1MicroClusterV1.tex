@@ -1,0 +1,233 @@
+\hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1}{}\section{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1 Class Reference}
+\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1}\index{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1}}
+
+
+Inheritance diagram for Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a535fe276e2ea722b7526df2b0c7a816d}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, args, kwargs)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1}{Micro\+Cluster\+V1} class. \end{DoxyCompactList}\item 
+def \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a96848a3f344c55417c2372c96927314c}{jsonify} (self)
+\item 
+def \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ad0bb09e1ba3f158c47ba7712d5c18b72}{fade} (self, current\+\_\+time, decay\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em Decay weight according to elapsed time, microcluster is being older. \end{DoxyCompactList}\item 
+def \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a6eab40d474343e74a914eaa3d341e7d6}{merge} (self, mc, current\+\_\+time, decay\+\_\+rate, radius)
+\begin{DoxyCompactList}\small\item\em Absorb new observation by merging centroids according to gaussian neighbourhood coefficient(calc. \end{DoxyCompactList}\item 
+def \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ad9fd1f97aca72cc3f82e72e2a910932e}{gaussian\+\_\+neighbourhood} (self, \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ab8516e0a725a95e796becd032401ddc1}{distance}, radius)
+\begin{DoxyCompactList}\small\item\em A method that calculates gaussian neighbourhood coefficient according to distance of two vectors and radius value. \end{DoxyCompactList}\item 
+def \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ab8516e0a725a95e796becd032401ddc1}{distance} (self, mc)
+\begin{DoxyCompactList}\small\item\em Object based distance calculation wrapper, default distance metric is euclidean. \end{DoxyCompactList}\item 
+def \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_aa08f1e1397fba3cf685ab6c57bd618ed}{distance\+\_\+vector} (self, vector)
+\begin{DoxyCompactList}\small\item\em Vector based distance calculation wrapper method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a1e4653433268a1780f6702c33731645b}{config}
+\begin{DoxyCompactList}\small\item\em Class configuration kwargs. \end{DoxyCompactList}\item 
+\hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a1564bd2f57e01b78ba6f32145e2394b3}{centroid}
+\begin{DoxyCompactList}\small\item\em Centroid for microcluster initialization. \end{DoxyCompactList}\item 
+\hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a57fcddb96fd19b15fbdb1e6c21d5894c}{last\+\_\+update}
+\begin{DoxyCompactList}\small\item\em Weight update formula. \end{DoxyCompactList}\item 
+\hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a41ebafc3c8dd9afa188c2068ceb045ac}{weight}
+\item 
+\hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ac09b27bb33c4b34f8006bdf9db081416}{utils}
+\begin{DoxyCompactList}\small\item\em Utility interface modules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a535fe276e2ea722b7526df2b0c7a816d}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a535fe276e2ea722b7526df2b0c7a816d}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Constructor of \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1}{Micro\+Cluster\+V1} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+{\em kwargs} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ab8516e0a725a95e796becd032401ddc1}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ab8516e0a725a95e796becd032401ddc1}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!distance@{distance}}
+\index{distance@{distance}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily def Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+distance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mc }\end{DoxyParamCaption})}
+
+
+
+Object based distance calculation wrapper, default distance metric is euclidean. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mc} & microcluster object  mc \+: \hyperlink{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1}{Micro\+Cluster\+V1} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: distance vector  \+: list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_aa08f1e1397fba3cf685ab6c57bd618ed}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_aa08f1e1397fba3cf685ab6c57bd618ed}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!distance\+\_\+vector@{distance\+\_\+vector}}
+\index{distance\+\_\+vector@{distance\+\_\+vector}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{distance\+\_\+vector()}{distance\_vector()}}
+{\footnotesize\ttfamily def Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+distance\+\_\+vector (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{vector }\end{DoxyParamCaption})}
+
+
+
+Vector based distance calculation wrapper method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & same sized input vector  vector\+: list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: distance vector \+: list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ad0bb09e1ba3f158c47ba7712d5c18b72}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ad0bb09e1ba3f158c47ba7712d5c18b72}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!fade@{fade}}
+\index{fade@{fade}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{fade()}{fade()}}
+{\footnotesize\ttfamily def Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+fade (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{current\+\_\+time,  }\item[{}]{decay\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+Decay weight according to elapsed time, microcluster is being older. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+time} & current time step \\
+\hline
+{\em decay\+\_\+rate} & weight decay rate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ad9fd1f97aca72cc3f82e72e2a910932e}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ad9fd1f97aca72cc3f82e72e2a910932e}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!gaussian\+\_\+neighbourhood@{gaussian\+\_\+neighbourhood}}
+\index{gaussian\+\_\+neighbourhood@{gaussian\+\_\+neighbourhood}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{gaussian\+\_\+neighbourhood()}{gaussian\_neighbourhood()}}
+{\footnotesize\ttfamily def Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+gaussian\+\_\+neighbourhood (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{distance,  }\item[{}]{radius }\end{DoxyParamCaption})}
+
+
+
+A method that calculates gaussian neighbourhood coefficient according to distance of two vectors and radius value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & distance between to vectors (default metric is euclidean neighbourhood)  distance\+: float, list \\
+\hline
+{\em radius} & radius value  radius\+: float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: gaussian neighbour coefficient \+: float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a96848a3f344c55417c2372c96927314c}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a96848a3f344c55417c2372c96927314c}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!jsonify@{jsonify}}
+\index{jsonify@{jsonify}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{jsonify()}{jsonify()}}
+{\footnotesize\ttfamily def Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+jsonify (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a6eab40d474343e74a914eaa3d341e7d6}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a6eab40d474343e74a914eaa3d341e7d6}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!merge@{merge}}
+\index{merge@{merge}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily def Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+merge (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mc,  }\item[{}]{current\+\_\+time,  }\item[{}]{decay\+\_\+rate,  }\item[{}]{radius }\end{DoxyParamCaption})}
+
+
+
+Absorb new observation by merging centroids according to gaussian neighbourhood coefficient(calc. 
+
+acc. to radius and distance) 
+\begin{DoxyParams}{Parameters}
+{\em mc} & microcluster object \\
+\hline
+{\em current\+\_\+time} & current time step \\
+\hline
+{\em decay\+\_\+rate} & weight decay rate \\
+\hline
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None, Updated microcluster centroids as inplace 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a1564bd2f57e01b78ba6f32145e2394b3}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a1564bd2f57e01b78ba6f32145e2394b3}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!centroid@{centroid}}
+\index{centroid@{centroid}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{centroid}{centroid}}
+{\footnotesize\ttfamily Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+centroid}
+
+
+
+Centroid for microcluster initialization. 
+
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a1e4653433268a1780f6702c33731645b}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a1e4653433268a1780f6702c33731645b}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!config@{config}}
+\index{config@{config}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+config}
+
+
+
+Class configuration kwargs. 
+
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a57fcddb96fd19b15fbdb1e6c21d5894c}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a57fcddb96fd19b15fbdb1e6c21d5894c}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!last\+\_\+update@{last\+\_\+update}}
+\index{last\+\_\+update@{last\+\_\+update}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{last\+\_\+update}{last\_update}}
+{\footnotesize\ttfamily Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+last\+\_\+update}
+
+
+
+Weight update formula. 
+
+Time update \mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ac09b27bb33c4b34f8006bdf9db081416}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_ac09b27bb33c4b34f8006bdf9db081416}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!utils@{utils}}
+\index{utils@{utils}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+utils}
+
+
+
+Utility interface modules. 
+
+\mbox{\Hypertarget{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a41ebafc3c8dd9afa188c2068ceb045ac}\label{classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1_a41ebafc3c8dd9afa188c2068ceb045ac}} 
+\index{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}!weight@{weight}}
+\index{weight@{weight}!Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1@{Stream\+Clustering\+Algorithms\+::evo\+Stream\+::v1\+::\+Classes\+::\+Micro\+Cluster\+V1\+::\+Micro\+Cluster\+V1}}
+\subsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily Stream\+Clustering\+Algorithms.\+evo\+Stream.\+v1.\+Classes.\+Micro\+Cluster\+V1.\+Micro\+Cluster\+V1.\+weight}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+evo\+Stream/v1/\+Classes/\hyperlink{MicroClusterV1_8py}{Micro\+Cluster\+V1.\+py}\end{DoxyCompactItemize}

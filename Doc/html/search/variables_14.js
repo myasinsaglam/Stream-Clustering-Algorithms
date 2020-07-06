@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['ward',['ward',['../namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison.html#a5e3d713b5270334577f9e60138088495',1,'StreamClusteringAlgorithms.evoStream.v1.Tests.plot_cluster_comparison.ward()'],['../namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2.html#aaf8a7e37d59e9fadd9316e501f21fb52',1,'StreamClusteringAlgorithms.evoStream.v1.Tests.plot_cluster_comparison2.ward()']]],
+  ['warming_5fcurrent',['warming_current',['../classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Algorithm_1_1EvoStreamV1_1_1EvoStreamV1.html#a0777f8aaf2a42d9c7fc6abdb2e1a7645',1,'StreamClusteringAlgorithms::evoStream::v1::Algorithm::EvoStreamV1::EvoStreamV1']]],
+  ['warming_5finstance_5fcount',['warming_instance_count',['../classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Algorithm_1_1EvoStreamV1_1_1EvoStreamV1.html#a1008e3ae665d3d1a9e06ce20b21685c4',1,'StreamClusteringAlgorithms::evoStream::v1::Algorithm::EvoStreamV1::EvoStreamV1']]],
+  ['weight',['weight',['../classStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Classes_1_1MicroClusterV1_1_1MicroClusterV1.html#a41ebafc3c8dd9afa188c2068ceb045ac',1,'StreamClusteringAlgorithms::evoStream::v1::Classes::MicroClusterV1::MicroClusterV1']]],
+  ['wspace',['wspace',['../namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison.html#a29c45c5ca682c6a08356c894e0a2b880',1,'StreamClusteringAlgorithms.evoStream.v1.Tests.plot_cluster_comparison.wspace()'],['../namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2.html#a4d3f68526ae0aca4d78820f68afd18d9',1,'StreamClusteringAlgorithms.evoStream.v1.Tests.plot_cluster_comparison2.wspace()']]]
+];

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['horizontalalignment',['horizontalalignment',['../namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison.html#a0565a2d800c9dbf4d85f255744583ca2',1,'StreamClusteringAlgorithms.evoStream.v1.Tests.plot_cluster_comparison.horizontalalignment()'],['../namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2.html#ab0a179491932f87267669fdeadd48a1e',1,'StreamClusteringAlgorithms.evoStream.v1.Tests.plot_cluster_comparison2.horizontalalignment()']]],
+  ['hspace',['hspace',['../namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison.html#ae92d694309b9401382f147ed651b4200',1,'StreamClusteringAlgorithms.evoStream.v1.Tests.plot_cluster_comparison.hspace()'],['../namespaceStreamClusteringAlgorithms_1_1evoStream_1_1v1_1_1Tests_1_1plot__cluster__comparison2.html#ae7b279407a28540d18da2af5f1142557',1,'StreamClusteringAlgorithms.evoStream.v1.Tests.plot_cluster_comparison2.hspace()']]]
+];

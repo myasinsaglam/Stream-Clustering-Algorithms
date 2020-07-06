@@ -1,0 +1,505 @@
+\hypertarget{namespaceplot__cluster__comparison}{}\section{plot\+\_\+cluster\+\_\+comparison Namespace Reference}
+\label{namespaceplot__cluster__comparison}\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples} = 5000
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a9b713de1bdebe0642df392b2a7dff7f3}{noisy\+\_\+circles}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a90ab3d67916d16226f58ffe7c50d7623}{noisy\+\_\+moons} = datasets.\+make\+\_\+moons(\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}=\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}, noise=.\+5)
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a62169452e335cd67768b8071d3896818}{blobs} = datasets.\+make\+\_\+blobs(\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}=\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}, \hyperlink{namespaceplot__cluster__comparison_a2bfa08a7ae46422d5c6e34d5a0edd76c}{random\+\_\+state}=8)
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a1721edbba5df230e9319d1a202b424ed}{no\+\_\+structure} = np.\+random.\+rand(\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}, 2), None
+\item 
+int \hyperlink{namespaceplot__cluster__comparison_a2bfa08a7ae46422d5c6e34d5a0edd76c}{random\+\_\+state} = 170
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a92f18e1b0bff540575ef5295ce60adef}{X} = Standard\+Scaler().fit\+\_\+transform(X)
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a4341eac9f6e009470760b4e123c2acad}{y}
+\item 
+list \hyperlink{namespaceplot__cluster__comparison_accd21aa8de30bfc3ba79b3a384a05a6e}{transformation} = \mbox{[}\mbox{[}0.\+6, -\/0.\+6\mbox{]}, \mbox{[}-\/0.\+4, 0.\+8\mbox{]}\mbox{]}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a4bce070b36506c646cb5b702fc953298}{X\+\_\+aniso} = np.\+dot(\hyperlink{namespaceplot__cluster__comparison_a92f18e1b0bff540575ef5295ce60adef}{X}, \hyperlink{namespaceplot__cluster__comparison_accd21aa8de30bfc3ba79b3a384a05a6e}{transformation})
+\item 
+tuple \hyperlink{namespaceplot__cluster__comparison_a164bf5ca336400f3ed6eb956b9d04552}{aniso} = (\hyperlink{namespaceplot__cluster__comparison_a4bce070b36506c646cb5b702fc953298}{X\+\_\+aniso}, \hyperlink{namespaceplot__cluster__comparison_a4341eac9f6e009470760b4e123c2acad}{y})
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a25773486b8df3fde9e17bca039afecb1}{varied}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_adc55aa0f44e59e0f3471833db6f25b08}{figsize}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a2964c1a5d36124d8d65b9086403183cb}{left}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a8a02f4b67ada3f0ec59dbea12416c7bb}{right}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a3c60195300c16ce76b96e6376a0b8654}{bottom}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_aa76c76b89da557e22c27048541f77c80}{top}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_af7c99d4267ffefc921a644fe6ef64c3b}{wspace}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a645aac958e0ab94d33d30fefaff93e6f}{hspace}
+\item 
+int \hyperlink{namespaceplot__cluster__comparison_a4dd5866fcfb5665cc1aa3406261b692e}{plot\+\_\+num} = 1
+\item 
+dictionary \hyperlink{namespaceplot__cluster__comparison_aea1f3ae4fe0c1512de085b8bec71998c}{default\+\_\+base}
+\item 
+list \hyperlink{namespaceplot__cluster__comparison_ade09451b956b38726a4e858a0338df63}{datasets}
+\item 
+dictionary \hyperlink{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}{params} = default\+\_\+base.\+copy()
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a3628421ec7ed08e955e49826b638402b}{bandwidth} = cluster.\+estimate\+\_\+bandwidth(\hyperlink{namespaceplot__cluster__comparison_a92f18e1b0bff540575ef5295ce60adef}{X}, quantile=\hyperlink{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}{params}\mbox{[}\textquotesingle{}quantile\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a93f46d7986787bc24cee7801a0d30954}{connectivity}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_ae1c9ec5b0bfb5adab345a4e652f80eaa}{ms} = cluster.\+Mean\+Shift(\hyperlink{namespaceplot__cluster__comparison_a3628421ec7ed08e955e49826b638402b}{bandwidth}=\hyperlink{namespaceplot__cluster__comparison_a3628421ec7ed08e955e49826b638402b}{bandwidth}, bin\+\_\+seeding=True)
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a0e062129f02c2e5431730b2c9728faf8}{two\+\_\+means} = cluster.\+Mini\+Batch\+K\+Means(n\+\_\+clusters=\hyperlink{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}{params}\mbox{[}\textquotesingle{}n\+\_\+clusters\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a8c73d7edecd47d7b3a32447d9c8a9f32}{ward}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a27b314b7c2137c1d0299a33e63293ec9}{spectral}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a1104a5ca141007136247a905c8d03d9d}{dbscan} = cluster.\+D\+B\+S\+C\+AN(eps=\hyperlink{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}{params}\mbox{[}\textquotesingle{}eps\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a491827f5dfe21e52aecea99d044bf46d}{evo\+Stream}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a44fd5ccc0a17d8338c014bd8a51e4292}{affinity\+\_\+propagation}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a85d29d2dbcec5c46b4b3dbc72f6185a3}{average\+\_\+linkage}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_ad452edfafde1162ed2eae9d7fd575f77}{birch} = cluster.\+Birch(n\+\_\+clusters=\hyperlink{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}{params}\mbox{[}\textquotesingle{}n\+\_\+clusters\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceplot__cluster__comparison_acdc478c15e02ee0fd3f5fb190d6e7d17}{gmm}
+\item 
+tuple \hyperlink{namespaceplot__cluster__comparison_a11980a91d1ed10bf862a103ff8f9990a}{clustering\+\_\+algorithms}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a7f7a3efbc136aeea39a1115ea80d6333}{t0} = time.\+time()
+\item 
+\hyperlink{namespaceplot__cluster__comparison_aa1840dff73ef46ac7f6fdbec95398228}{message}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_ab41605764644eb78915c2ce8dbc4bd89}{category}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_ab817cb5191efdabf7ab5a885b726b4e6}{t1} = time.\+time()
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a7fa61c4bcf3596c9427ce85335b90450}{y\+\_\+pred} = algorithm.\+labels\+\_\+.\+astype(np.\+int)
+\item 
+\hyperlink{namespaceplot__cluster__comparison_aeac909c579e7c35b640628cfab971467}{name}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a201c09752f95b79007d536565664943b}{size}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_ae58ce95ccc2b06b67de222e1165e4706}{colors}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a81e95ad5d4984732543d470657a92665}{s}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_af240eda41b5ec0a14b679276ca981cd4}{color}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_a90afe723998c14bb5c504776a5cc0e5e}{transform}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_aae4c838f77b63e7c29d5177bab684196}{trans\+Axes}
+\item 
+\hyperlink{namespaceplot__cluster__comparison_ac2b8fbd09f4504a207289ec252501620}{horizontalalignment}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a44fd5ccc0a17d8338c014bd8a51e4292}\label{namespaceplot__cluster__comparison_a44fd5ccc0a17d8338c014bd8a51e4292}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!affinity\+\_\+propagation@{affinity\+\_\+propagation}}
+\index{affinity\+\_\+propagation@{affinity\+\_\+propagation}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{affinity\+\_\+propagation}{affinity\_propagation}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+affinity\+\_\+propagation}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  cluster.AffinityPropagation(
+2         damping=params[\textcolor{stringliteral}{'damping'}], preference=params[\textcolor{stringliteral}{'preference'}])
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a164bf5ca336400f3ed6eb956b9d04552}\label{namespaceplot__cluster__comparison_a164bf5ca336400f3ed6eb956b9d04552}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!aniso@{aniso}}
+\index{aniso@{aniso}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{aniso}{aniso}}
+{\footnotesize\ttfamily tuple plot\+\_\+cluster\+\_\+comparison.\+aniso = (\hyperlink{namespaceplot__cluster__comparison_a4bce070b36506c646cb5b702fc953298}{X\+\_\+aniso}, \hyperlink{namespaceplot__cluster__comparison_a4341eac9f6e009470760b4e123c2acad}{y})}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a85d29d2dbcec5c46b4b3dbc72f6185a3}\label{namespaceplot__cluster__comparison_a85d29d2dbcec5c46b4b3dbc72f6185a3}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!average\+\_\+linkage@{average\+\_\+linkage}}
+\index{average\+\_\+linkage@{average\+\_\+linkage}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{average\+\_\+linkage}{average\_linkage}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+average\+\_\+linkage}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  cluster.AgglomerativeClustering(
+2         linkage=\textcolor{stringliteral}{"average"}, affinity=\textcolor{stringliteral}{"cityblock"},
+3         n\_clusters=params[\textcolor{stringliteral}{'n\_clusters'}], connectivity=connectivity)
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a3628421ec7ed08e955e49826b638402b}\label{namespaceplot__cluster__comparison_a3628421ec7ed08e955e49826b638402b}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!bandwidth@{bandwidth}}
+\index{bandwidth@{bandwidth}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{bandwidth}{bandwidth}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+bandwidth = cluster.\+estimate\+\_\+bandwidth(\hyperlink{namespaceplot__cluster__comparison_a92f18e1b0bff540575ef5295ce60adef}{X}, quantile=\hyperlink{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}{params}\mbox{[}\textquotesingle{}quantile\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_ad452edfafde1162ed2eae9d7fd575f77}\label{namespaceplot__cluster__comparison_ad452edfafde1162ed2eae9d7fd575f77}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!birch@{birch}}
+\index{birch@{birch}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{birch}{birch}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+birch = cluster.\+Birch(n\+\_\+clusters=\hyperlink{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}{params}\mbox{[}\textquotesingle{}n\+\_\+clusters\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a62169452e335cd67768b8071d3896818}\label{namespaceplot__cluster__comparison_a62169452e335cd67768b8071d3896818}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!blobs@{blobs}}
+\index{blobs@{blobs}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{blobs}{blobs}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+blobs = datasets.\+make\+\_\+blobs(\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}=\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}, \hyperlink{namespaceplot__cluster__comparison_a2bfa08a7ae46422d5c6e34d5a0edd76c}{random\+\_\+state}=8)}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a3c60195300c16ce76b96e6376a0b8654}\label{namespaceplot__cluster__comparison_a3c60195300c16ce76b96e6376a0b8654}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!bottom@{bottom}}
+\index{bottom@{bottom}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{bottom}{bottom}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+bottom}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_ab41605764644eb78915c2ce8dbc4bd89}\label{namespaceplot__cluster__comparison_ab41605764644eb78915c2ce8dbc4bd89}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!category@{category}}
+\index{category@{category}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{category}{category}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+category}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a11980a91d1ed10bf862a103ff8f9990a}\label{namespaceplot__cluster__comparison_a11980a91d1ed10bf862a103ff8f9990a}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!clustering\+\_\+algorithms@{clustering\+\_\+algorithms}}
+\index{clustering\+\_\+algorithms@{clustering\+\_\+algorithms}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{clustering\+\_\+algorithms}{clustering\_algorithms}}
+{\footnotesize\ttfamily tuple plot\+\_\+cluster\+\_\+comparison.\+clustering\+\_\+algorithms}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (
+2         (\textcolor{stringliteral}{'MiniBatchKMeans'}, two\_means),
+3         (\textcolor{stringliteral}{'AffinityPropagation'}, affinity\_propagation),
+4         (\textcolor{stringliteral}{'MeanShift'}, ms),
+5         (\textcolor{stringliteral}{'SpectralClustering'}, spectral),
+6         (\textcolor{stringliteral}{'Ward'}, ward),
+7         (\textcolor{stringliteral}{'AgglomerativeClustering'}, average\_linkage),
+8         (\textcolor{stringliteral}{'DBSCAN'}, dbscan),
+9         \textcolor{comment}{# ('OPTICS', optics),}
+10         (\textcolor{stringliteral}{'Evo Stream'}, evoStream),
+11         (\textcolor{stringliteral}{'Birch'}, birch),
+12         (\textcolor{stringliteral}{'GaussianMixture'}, gmm)
+13     )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_af240eda41b5ec0a14b679276ca981cd4}\label{namespaceplot__cluster__comparison_af240eda41b5ec0a14b679276ca981cd4}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!color@{color}}
+\index{color@{color}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+color}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_ae58ce95ccc2b06b67de222e1165e4706}\label{namespaceplot__cluster__comparison_ae58ce95ccc2b06b67de222e1165e4706}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!colors@{colors}}
+\index{colors@{colors}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  np.array(list(islice(cycle([\textcolor{stringliteral}{'#377eb8'}, \textcolor{stringliteral}{'#ff7f00'}, \textcolor{stringliteral}{'#4daf4a'},
+2                                              \textcolor{stringliteral}{'#f781bf'}, \textcolor{stringliteral}{'#a65628'}, \textcolor{stringliteral}{'#984ea3'},
+3                                              \textcolor{stringliteral}{'#999999'}, \textcolor{stringliteral}{'#e41a1c'}, \textcolor{stringliteral}{'#dede00'}]),
+4                                       int(max(y\_pred) + 1))))
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a93f46d7986787bc24cee7801a0d30954}\label{namespaceplot__cluster__comparison_a93f46d7986787bc24cee7801a0d30954}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!connectivity@{connectivity}}
+\index{connectivity@{connectivity}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{connectivity}{connectivity}}
+{\footnotesize\ttfamily float plot\+\_\+cluster\+\_\+comparison.\+connectivity}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  kneighbors\_graph(
+2         X, n\_neighbors=params[\textcolor{stringliteral}{'n\_neighbors'}], include\_self=\textcolor{keyword}{False})
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_ade09451b956b38726a4e858a0338df63}\label{namespaceplot__cluster__comparison_ade09451b956b38726a4e858a0338df63}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!datasets@{datasets}}
+\index{datasets@{datasets}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{datasets}{datasets}}
+{\footnotesize\ttfamily list plot\+\_\+cluster\+\_\+comparison.\+datasets}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     (noisy\_circles, \{\textcolor{stringliteral}{'damping'}: .77, \textcolor{stringliteral}{'preference'}: -240,
+3                      \textcolor{stringliteral}{'quantile'}: .2, \textcolor{stringliteral}{'n\_clusters'}: 2,
+4                      \textcolor{stringliteral}{'min\_samples'}: 20, \textcolor{stringliteral}{'xi'}: 0.25\}),
+5     (noisy\_moons, \{\textcolor{stringliteral}{'damping'}: .75, \textcolor{stringliteral}{'preference'}: -220, \textcolor{stringliteral}{'n\_clusters'}: 2\}),
+6     (varied, \{\textcolor{stringliteral}{'eps'}: .18, \textcolor{stringliteral}{'n\_neighbors'}: 2,
+7               \textcolor{stringliteral}{'min\_samples'}: 5, \textcolor{stringliteral}{'xi'}: 0.035, \textcolor{stringliteral}{'min\_cluster\_size'}: .2\}),
+8     (aniso, \{\textcolor{stringliteral}{'eps'}: .15, \textcolor{stringliteral}{'n\_neighbors'}: 2,
+9              \textcolor{stringliteral}{'min\_samples'}: 20, \textcolor{stringliteral}{'xi'}: 0.1, \textcolor{stringliteral}{'min\_cluster\_size'}: .2\}),
+10     (blobs, \{\}),
+11     (no\_structure, \{\})]
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a1104a5ca141007136247a905c8d03d9d}\label{namespaceplot__cluster__comparison_a1104a5ca141007136247a905c8d03d9d}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!dbscan@{dbscan}}
+\index{dbscan@{dbscan}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{dbscan}{dbscan}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+dbscan = cluster.\+D\+B\+S\+C\+AN(eps=\hyperlink{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}{params}\mbox{[}\textquotesingle{}eps\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_aea1f3ae4fe0c1512de085b8bec71998c}\label{namespaceplot__cluster__comparison_aea1f3ae4fe0c1512de085b8bec71998c}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!default\+\_\+base@{default\+\_\+base}}
+\index{default\+\_\+base@{default\+\_\+base}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{default\+\_\+base}{default\_base}}
+{\footnotesize\ttfamily dictionary plot\+\_\+cluster\+\_\+comparison.\+default\+\_\+base}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \{\textcolor{stringliteral}{'quantile'}: .3,
+2                 \textcolor{stringliteral}{'eps'}: .3,
+3                 \textcolor{stringliteral}{'damping'}: .9,
+4                 \textcolor{stringliteral}{'preference'}: -200,
+5                 \textcolor{stringliteral}{'n\_neighbors'}: 10,
+6                 \textcolor{stringliteral}{'n\_clusters'}: 3,
+7                 \textcolor{stringliteral}{'min\_samples'}: 20,
+8                 \textcolor{stringliteral}{'xi'}: 0.05,
+9                 \textcolor{stringliteral}{'min\_cluster\_size'}: 0.1\}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a491827f5dfe21e52aecea99d044bf46d}\label{namespaceplot__cluster__comparison_a491827f5dfe21e52aecea99d044bf46d}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!evo\+Stream@{evo\+Stream}}
+\index{evo\+Stream@{evo\+Stream}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{evo\+Stream}{evoStream}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+evo\+Stream}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  EvoStream(radius=params[\textcolor{stringliteral}{'eps'}]/10,
+2                              decay\_rate=params[\textcolor{stringliteral}{'n\_clusters'}]/10,
+3                              cleanup\_interval=100,
+4                              number\_of\_clusters=params[\textcolor{stringliteral}{'n\_clusters'}]+3,
+5                              crossover\_rate=0.9,
+6                              mutation\_rate=0.001,
+7                              population\_size=(params[\textcolor{stringliteral}{'n\_clusters'}]+3)*10,
+8                              initialize\_after=2 * 4,
+9                              recluster\_generations=35)
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_adc55aa0f44e59e0f3471833db6f25b08}\label{namespaceplot__cluster__comparison_adc55aa0f44e59e0f3471833db6f25b08}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!figsize@{figsize}}
+\index{figsize@{figsize}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{figsize}{figsize}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+figsize}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_acdc478c15e02ee0fd3f5fb190d6e7d17}\label{namespaceplot__cluster__comparison_acdc478c15e02ee0fd3f5fb190d6e7d17}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!gmm@{gmm}}
+\index{gmm@{gmm}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{gmm}{gmm}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+gmm}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  mixture.GaussianMixture(
+2         n\_components=params[\textcolor{stringliteral}{'n\_clusters'}], covariance\_type=\textcolor{stringliteral}{'full'})
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_ac2b8fbd09f4504a207289ec252501620}\label{namespaceplot__cluster__comparison_ac2b8fbd09f4504a207289ec252501620}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!horizontalalignment@{horizontalalignment}}
+\index{horizontalalignment@{horizontalalignment}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{horizontalalignment}{horizontalalignment}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+horizontalalignment}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a645aac958e0ab94d33d30fefaff93e6f}\label{namespaceplot__cluster__comparison_a645aac958e0ab94d33d30fefaff93e6f}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!hspace@{hspace}}
+\index{hspace@{hspace}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{hspace}{hspace}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+hspace}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a2964c1a5d36124d8d65b9086403183cb}\label{namespaceplot__cluster__comparison_a2964c1a5d36124d8d65b9086403183cb}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!left@{left}}
+\index{left@{left}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+left}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_aa1840dff73ef46ac7f6fdbec95398228}\label{namespaceplot__cluster__comparison_aa1840dff73ef46ac7f6fdbec95398228}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!message@{message}}
+\index{message@{message}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+message}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_ae1c9ec5b0bfb5adab345a4e652f80eaa}\label{namespaceplot__cluster__comparison_ae1c9ec5b0bfb5adab345a4e652f80eaa}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!ms@{ms}}
+\index{ms@{ms}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{ms}{ms}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+ms = cluster.\+Mean\+Shift(\hyperlink{namespaceplot__cluster__comparison_a3628421ec7ed08e955e49826b638402b}{bandwidth}=\hyperlink{namespaceplot__cluster__comparison_a3628421ec7ed08e955e49826b638402b}{bandwidth}, bin\+\_\+seeding=True)}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}\label{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!n\+\_\+samples@{n\+\_\+samples}}
+\index{n\+\_\+samples@{n\+\_\+samples}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{n\+\_\+samples}{n\_samples}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+n\+\_\+samples = 5000}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_aeac909c579e7c35b640628cfab971467}\label{namespaceplot__cluster__comparison_aeac909c579e7c35b640628cfab971467}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!name@{name}}
+\index{name@{name}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+name}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a1721edbba5df230e9319d1a202b424ed}\label{namespaceplot__cluster__comparison_a1721edbba5df230e9319d1a202b424ed}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!no\+\_\+structure@{no\+\_\+structure}}
+\index{no\+\_\+structure@{no\+\_\+structure}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{no\+\_\+structure}{no\_structure}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+no\+\_\+structure = np.\+random.\+rand(\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}, 2), None}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a9b713de1bdebe0642df392b2a7dff7f3}\label{namespaceplot__cluster__comparison_a9b713de1bdebe0642df392b2a7dff7f3}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!noisy\+\_\+circles@{noisy\+\_\+circles}}
+\index{noisy\+\_\+circles@{noisy\+\_\+circles}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{noisy\+\_\+circles}{noisy\_circles}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+noisy\+\_\+circles}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  datasets.make\_circles(n\_samples=n\_samples, factor=.5,
+2                                       noise=.5)
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a90ab3d67916d16226f58ffe7c50d7623}\label{namespaceplot__cluster__comparison_a90ab3d67916d16226f58ffe7c50d7623}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!noisy\+\_\+moons@{noisy\+\_\+moons}}
+\index{noisy\+\_\+moons@{noisy\+\_\+moons}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{noisy\+\_\+moons}{noisy\_moons}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+noisy\+\_\+moons = datasets.\+make\+\_\+moons(\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}=\hyperlink{namespaceplot__cluster__comparison_a2e68edd1586a01f4249bfe2cf368074b}{n\+\_\+samples}, noise=.\+5)}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}\label{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!params@{params}}
+\index{params@{params}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily dictionary plot\+\_\+cluster\+\_\+comparison.\+params = default\+\_\+base.\+copy()}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a4dd5866fcfb5665cc1aa3406261b692e}\label{namespaceplot__cluster__comparison_a4dd5866fcfb5665cc1aa3406261b692e}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!plot\+\_\+num@{plot\+\_\+num}}
+\index{plot\+\_\+num@{plot\+\_\+num}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{plot\+\_\+num}{plot\_num}}
+{\footnotesize\ttfamily int plot\+\_\+cluster\+\_\+comparison.\+plot\+\_\+num = 1}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a2bfa08a7ae46422d5c6e34d5a0edd76c}\label{namespaceplot__cluster__comparison_a2bfa08a7ae46422d5c6e34d5a0edd76c}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!random\+\_\+state@{random\+\_\+state}}
+\index{random\+\_\+state@{random\+\_\+state}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{random\+\_\+state}{random\_state}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+random\+\_\+state = 170}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a8a02f4b67ada3f0ec59dbea12416c7bb}\label{namespaceplot__cluster__comparison_a8a02f4b67ada3f0ec59dbea12416c7bb}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!right@{right}}
+\index{right@{right}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+right}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a81e95ad5d4984732543d470657a92665}\label{namespaceplot__cluster__comparison_a81e95ad5d4984732543d470657a92665}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!s@{s}}
+\index{s@{s}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+s}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a201c09752f95b79007d536565664943b}\label{namespaceplot__cluster__comparison_a201c09752f95b79007d536565664943b}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!size@{size}}
+\index{size@{size}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+size}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a27b314b7c2137c1d0299a33e63293ec9}\label{namespaceplot__cluster__comparison_a27b314b7c2137c1d0299a33e63293ec9}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!spectral@{spectral}}
+\index{spectral@{spectral}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{spectral}{spectral}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+spectral}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  cluster.SpectralClustering(
+2         n\_clusters=params[\textcolor{stringliteral}{'n\_clusters'}], eigen\_solver=\textcolor{stringliteral}{'arpack'},
+3         affinity=\textcolor{stringliteral}{"nearest\_neighbors"})
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a7f7a3efbc136aeea39a1115ea80d6333}\label{namespaceplot__cluster__comparison_a7f7a3efbc136aeea39a1115ea80d6333}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!t0@{t0}}
+\index{t0@{t0}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{t0}{t0}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+t0 = time.\+time()}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_ab817cb5191efdabf7ab5a885b726b4e6}\label{namespaceplot__cluster__comparison_ab817cb5191efdabf7ab5a885b726b4e6}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!t1@{t1}}
+\index{t1@{t1}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{t1}{t1}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+t1 = time.\+time()}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_aa76c76b89da557e22c27048541f77c80}\label{namespaceplot__cluster__comparison_aa76c76b89da557e22c27048541f77c80}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!top@{top}}
+\index{top@{top}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{top}{top}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+top}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_aae4c838f77b63e7c29d5177bab684196}\label{namespaceplot__cluster__comparison_aae4c838f77b63e7c29d5177bab684196}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!trans\+Axes@{trans\+Axes}}
+\index{trans\+Axes@{trans\+Axes}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{trans\+Axes}{transAxes}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+trans\+Axes}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a90afe723998c14bb5c504776a5cc0e5e}\label{namespaceplot__cluster__comparison_a90afe723998c14bb5c504776a5cc0e5e}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!transform@{transform}}
+\index{transform@{transform}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+transform}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_accd21aa8de30bfc3ba79b3a384a05a6e}\label{namespaceplot__cluster__comparison_accd21aa8de30bfc3ba79b3a384a05a6e}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!transformation@{transformation}}
+\index{transformation@{transformation}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{transformation}{transformation}}
+{\footnotesize\ttfamily list plot\+\_\+cluster\+\_\+comparison.\+transformation = \mbox{[}\mbox{[}0.\+6, -\/0.\+6\mbox{]}, \mbox{[}-\/0.\+4, 0.\+8\mbox{]}\mbox{]}}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a0e062129f02c2e5431730b2c9728faf8}\label{namespaceplot__cluster__comparison_a0e062129f02c2e5431730b2c9728faf8}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!two\+\_\+means@{two\+\_\+means}}
+\index{two\+\_\+means@{two\+\_\+means}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{two\+\_\+means}{two\_means}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+two\+\_\+means = cluster.\+Mini\+Batch\+K\+Means(n\+\_\+clusters=\hyperlink{namespaceplot__cluster__comparison_a5afe27ff875351ace28865d50f61c56a}{params}\mbox{[}\textquotesingle{}n\+\_\+clusters\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a25773486b8df3fde9e17bca039afecb1}\label{namespaceplot__cluster__comparison_a25773486b8df3fde9e17bca039afecb1}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!varied@{varied}}
+\index{varied@{varied}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{varied}{varied}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+varied}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  datasets.make\_blobs(n\_samples=n\_samples,
+2                              cluster\_std=[1.0, 2.5, 0.5],
+3                              random\_state=random\_state)
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a8c73d7edecd47d7b3a32447d9c8a9f32}\label{namespaceplot__cluster__comparison_a8c73d7edecd47d7b3a32447d9c8a9f32}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!ward@{ward}}
+\index{ward@{ward}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{ward}{ward}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+ward}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  cluster.AgglomerativeClustering(
+2         n\_clusters=params[\textcolor{stringliteral}{'n\_clusters'}], linkage=\textcolor{stringliteral}{'ward'},
+3         connectivity=connectivity)
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_af7c99d4267ffefc921a644fe6ef64c3b}\label{namespaceplot__cluster__comparison_af7c99d4267ffefc921a644fe6ef64c3b}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!wspace@{wspace}}
+\index{wspace@{wspace}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{wspace}{wspace}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+wspace}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a92f18e1b0bff540575ef5295ce60adef}\label{namespaceplot__cluster__comparison_a92f18e1b0bff540575ef5295ce60adef}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!X@{X}}
+\index{X@{X}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+X = Standard\+Scaler().fit\+\_\+transform(X)}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a4bce070b36506c646cb5b702fc953298}\label{namespaceplot__cluster__comparison_a4bce070b36506c646cb5b702fc953298}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!X\+\_\+aniso@{X\+\_\+aniso}}
+\index{X\+\_\+aniso@{X\+\_\+aniso}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{X\+\_\+aniso}{X\_aniso}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+X\+\_\+aniso = np.\+dot(\hyperlink{namespaceplot__cluster__comparison_a92f18e1b0bff540575ef5295ce60adef}{X}, \hyperlink{namespaceplot__cluster__comparison_accd21aa8de30bfc3ba79b3a384a05a6e}{transformation})}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a4341eac9f6e009470760b4e123c2acad}\label{namespaceplot__cluster__comparison_a4341eac9f6e009470760b4e123c2acad}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!y@{y}}
+\index{y@{y}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+y}
+
+\mbox{\Hypertarget{namespaceplot__cluster__comparison_a7fa61c4bcf3596c9427ce85335b90450}\label{namespaceplot__cluster__comparison_a7fa61c4bcf3596c9427ce85335b90450}} 
+\index{plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}!y\+\_\+pred@{y\+\_\+pred}}
+\index{y\+\_\+pred@{y\+\_\+pred}!plot\+\_\+cluster\+\_\+comparison@{plot\+\_\+cluster\+\_\+comparison}}
+\subsubsection{\texorpdfstring{y\+\_\+pred}{y\_pred}}
+{\footnotesize\ttfamily plot\+\_\+cluster\+\_\+comparison.\+y\+\_\+pred = algorithm.\+labels\+\_\+.\+astype(np.\+int)}
+
