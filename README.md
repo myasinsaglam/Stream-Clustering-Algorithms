@@ -6,7 +6,7 @@ Evolutional Stream Clustering Algorithm Python Implementation
 
 <h4> v1 - Base version </h4> 
 
-[Paper](https://www.sciencedirect.com/science/article/pii/S2214579618300649) [Code](https://github.com/MatthiasCarnein/evoStream_C.git)
+[[Paper]](https://www.sciencedirect.com/science/article/pii/S2214579618300649)  [[Code]](https://github.com/MatthiasCarnein/evoStream_C.git)
 
 <h4> v2 - Additional developments and algorithm improvements added by me </h4>
 
